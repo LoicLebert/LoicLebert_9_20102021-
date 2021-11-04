@@ -44,6 +44,7 @@ export default class {
               status: formatStatus(doc.data().status)
             }))
             .filter(bill => bill.email === userEmail)
+
           return bills
         })
         .catch(error => error)
